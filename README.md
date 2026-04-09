@@ -5,7 +5,7 @@ This repository demonstrates a vectorless RAG workflow on a PDF using PageIndex 
 
 ## 2. What Is Included
 - `src/pageindex_demo.ipynb`: End-to-end notebook demo.
-- `src/data/2603.15031.pdf`: Sample PDF used by the notebook.
+- `src/data/`: Folder containing PDF file to used as knowledge base.
 - `.env`: Local environment variables for API keys.
 
 ## 3. Setup and Dependency Installation
@@ -30,8 +30,8 @@ Keep `.env` local only. Do not share or commit real keys.
 - Client setup and environment loading.
 - PDF submission and document processing status polling.
 - Tree retrieval, printing, and node counting.
-- LLM tree search (`llm_tree_search`) to select relevant nodes.
-- Grounded answer generation (`generate_answer`) from retrieved nodes.
+- `get_relevant_nodes` to select relevant nodes using LLM.
+- Grounded answer generation (`generate_answer_from_llm`) from retrieved nodes.
 - End-to-end pipeline (`vectorless_rag`) plus direct PageIndex chat call and streaming MCP example.
 
 ## 6. Run Instructions and What to Observe
